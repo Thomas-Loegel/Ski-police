@@ -3,6 +3,20 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+    /* 400 : Regular
+       500 : Medium
+       700 : Bold
+    */
+    font-weight: 400;
+}
+
+@font-face {
+	font-family: "cunia";
+	src: url('../font/Cunia.otf');
+}
+
 
 /* HEADER */
 header{
@@ -19,13 +33,16 @@ header .item-1 a{
     font-size: 4rem;
     font-weight: 900;
     text-decoration: none;
+    text-shadow: 2px 2px #555;
     color: inherit;
+    font-family: "cunia";
 }
 
 header .item-2 nav ul{
     display: flex;
     flex-direction: row;
 }
+
 header .item-2 nav ul li{
     list-style: none;
 }
@@ -35,7 +52,13 @@ header .item-2 nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    text-shadow: 2px 2px #555;
     color: inherit;
+}
+
+header .item-2 nav ul li a:hover{
+    border-bottom: 0.3rem solid white;
+    box-shadow: 0px 2px 2px #555;
 }
 
 
@@ -64,6 +87,7 @@ main .hero .hero-text h1{
     color: white;
     font-size: 5rem;
     text-align: center;
+    font-family: "cunia";
 }
 
 main .hero .hero-text h1 span{
@@ -87,20 +111,130 @@ main .hero .hero-text h1 .edition{
 
 
 /* MAIN - HALL OF FAME */
+main .hall-of-fame .title-1{
+    margin: 0 0 5rem 0;
+    background: #0e87c0;
+    color: white;
+    text-shadow: 3px 3px #333;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-family: "cunia";
+}
 
+main .hall-of-fame .title-2{
+    margin: 0 0 5rem 0;
+    background: #ed1941;
+    color: white;
+    text-shadow: 3px 3px #333;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-family: "cunia";
+}
 
+main .hall-of-fame .podium-wrap{
+    padding: 0 5rem;
+    margin-bottom: 10rem;
+}
+
+main .hall-of-fame .podium-wrap h3{
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+}
+
+main .hall-of-fame .podium-wrap .podium{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .hall-of-fame .podium-wrap .podium :nth-child(1){
+    margin-top: 5rem;
+}
+main .hall-of-fame .podium-wrap .podium :nth-child(3){
+    margin-top: 5rem;
+}
+
+main .hall-of-fame .podium-wrap .podium div{
+    position: relative;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .hall-of-fame .podium-wrap .podium svg{
+    position: absolute;
+    top: 190px;
+    width: 25%;
+}
+
+main .hall-of-fame .podium-wrap .podium div img{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+main .hall-of-fame .podium-wrap .podium div p{
+    font-size: 2rem;
+    font-weight: 500;
+}
 
 
 
 /* MAIN - ABOUT */
+main .podium-wrap .wrap-score{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+main .podium-wrap .wrap-score .score{
+    width: 50%;
+}
 
+main .podium-wrap .wrap-score .score h4{
+    text-align: center;
+    margin-bottom: 5rem;
+}
 
+main .podium-wrap .wrap-score .score .sexe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+main .podium-wrap .wrap-score .score .sexe div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+main .podium-wrap .wrap-score .score .sexe div img{
+    display: flex;
+    background: #333;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+main .podium-wrap .wrap-score .score .sexe div svg{
+    position: absolute;
+    top : 140px;
+    width: 25%;
+}
+
+main .podium-wrap .wrap-score .score .sexe div p{
+    margin-top: 5rem;
+}
 
 
 /* FOOTER */
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -110,7 +244,6 @@ footer {
     background-color: #36363bef;
     color: whitesmoke;
 }
-
 
 .infos {
     flex-grow: 1;
@@ -128,8 +261,6 @@ footer {
     color: whitesmoke;
 }
 
-
-
 .partner {
     flex-grow: 2;
     height: 100%;
@@ -142,7 +273,6 @@ footer {
     width: auto;
     margin: 0 20px;
 }
-
 
 .copyright {
     flex-grow: 1;
