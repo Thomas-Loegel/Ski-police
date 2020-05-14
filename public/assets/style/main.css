@@ -1,18 +1,88 @@
 /* GLOBAL */
-
 *{
     box-sizing: border-box;
 }
 
 
 /* HEADER */
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 5rem;
+    color: white;
+}
 
+header .item-1 a{
+    font-size: 4rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: inherit;
+}
 
+header .item-2 nav ul{
+    display: flex;
+    flex-direction: row;
+}
+header .item-2 nav ul li{
+    list-style: none;
+}
+
+header .item-2 nav ul li a{
+    margin: 0 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: inherit;
+}
 
 
 /* HERO */
+main .hero{
+    position: relative;
+    z-index: -1;
+    background: url("../img/hero.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
 
+main .hero .hero-text{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+main .hero .hero-text h1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+
+main .hero .hero-text h1 span{
+    display: block;
+    background:rgba(6, 6, 6, 0.7);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+main .hero .hero-text h1 .station{
+    font-size: 10rem;
+    padding: 0 5rem;
+}
+
+main .hero .hero-text h1 .edition{
+    background:rgba(6, 6, 6, 0.8);
+    font-size: 5rem;
+    padding: 0 2.5rem;
+}
 
 
 
