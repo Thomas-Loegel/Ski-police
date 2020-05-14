@@ -133,6 +133,17 @@ main .hall-of-fame .title-2{
     font-family: "cunia";
 }
 
+main .hall-of-fame .title-3{
+    margin: 0 0 10rem 0;
+    background: #bbb9b9;
+    color: white;
+    text-shadow: 3px 3px #333;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-family: "cunia";
+}
+
 main .hall-of-fame .podium-wrap{
     padding: 0 5rem;
     margin-bottom: 10rem;
@@ -218,7 +229,6 @@ main .podium-wrap .wrap-score .score .sexe div{
 
 main .podium-wrap .wrap-score .score .sexe div img{
     display: flex;
-    background: #333;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -237,7 +247,7 @@ main .podium-wrap .wrap-score .score .sexe div p{
 
 /* MAIN - ABOUT */
 .about {
-    padding: 0 5rem;
+    padding: 0 20rem;
 }
 
 .about .section-1 {
@@ -267,7 +277,6 @@ main .podium-wrap .wrap-score .score .sexe div p{
 .about .section-2 {
     display: flex;
     align-items: flex-start;
-    margin: 40px 0;
     margin-bottom: 20rem;
 }
 
@@ -283,11 +292,11 @@ main .podium-wrap .wrap-score .score .sexe div p{
 }
 
 .about .section-2 .item-2 {
-    text-align: center;
+    text-align: end;
 }
 
 .about .section-2 .item-2 img {
-    width: 60%;
+    width: 75%;
 }
 
 
