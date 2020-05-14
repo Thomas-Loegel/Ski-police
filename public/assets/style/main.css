@@ -100,3 +100,51 @@ main .hero .hero-text h1 .edition{
 
 
 /* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    height: 130px;
+    background-color: #36363bef;
+    color: whitesmoke;
+}
+
+
+.infos {
+    flex-grow: 1;
+    color: whitesmoke;
+}
+.infos ul {
+    list-style: none;
+    padding: 0;
+}
+.infos ul li {
+    margin: 10px 0;
+}
+.infos ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+.partner {
+    flex-grow: 2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partner img {
+    height: 75%;
+    width: auto;
+    margin: 0 20px;
+}
+
+
+.copyright {
+    flex-grow: 1;
+    text-align: end;
+}
