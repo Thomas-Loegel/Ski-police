@@ -94,9 +94,49 @@ main .hero .hero-text h1 .edition{
 
 /* MAIN - ABOUT */
 
+.about {
+    padding: 40px 5rem 40px 5rem;
+    text-align: center;
+}
 
 
+.about .section-1 {
+    display: flex;
+    height: 350px;
+    margin: 40px 0;
+}
+.about .section-1 .item-1 {
+    width: 25%;
+}
+.about .section-1 .item-1 img {
+    height: 100%;
+}
+.about .section-1 .item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+}
 
+
+.about .section-2 {
+    display: flex;
+    height: 350px;
+    margin: 40px 0;
+}
+.about .section-2 .item-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+}
+.about .section-2 .item-2 {
+    text-align: center;
+    width: 25%;
+}
+.about .section-2 .item-2 img {
+    height: 100%;
+}
 
 
 /* FOOTER */
