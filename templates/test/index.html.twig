@@ -1,20 +1,144 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello TestController!{% endblock %}
+{% block title %}Ski Police
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<header>
+		<div class="item-1">
+			<span>
+				LOGO ICI
+			</span>
+		</div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+		<div class="item-2">
+			<nav>
+				<ul>
+					<li><a href="#">Résultats</a></li>
+					<li><a href="#">Histoire</a></li>
+					<li><a href="#">Rechercher</a></li>
+					<li><a href="#">Connection</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/ski-police/src/Controller/TestController.php'|file_link(0) }}">src/Controller/TestController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/ski-police/templates/test/index.html.twig'|file_link(0) }}">templates/test/index.html.twig</a></code></li>
-    </ul>
-</div>
+	<main>
+		<div
+			class="hero">
+			{# Background Here #}
+
+			<div class="hero-text">
+				<h1>
+					<span>ASPMSDA</span>
+					<span>21ème Edition</span>
+					<span>SuperDévoluy</span>
+				</h1>
+			</div>
+		</div>
+
+		<div class="hall-of-fame">
+			<h2>Hall of Fame</h2>
+
+			<div class="podium">
+				<h3>Podium Équipe</h3>
+				<div>
+					<div>
+						<img src="" alt="">
+						<p>Nom Prénom</p>
+					</div>
+					<div>
+						<img src="" alt="">
+						<p>Nom Prénom</p>
+					</div>
+					<div>
+						<img src="" alt="">
+						<p>Nom Prénom</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="podium">
+				<h3>Podium Master</h3>
+				<div></div>
+			</div>
+
+			<div class="podium">
+				<h3>Podium Vétéran</h3>
+				<div></div>
+			</div>
+
+			<div class="podium">
+				<h3>Podium Sénior</h3>
+				<div></div>
+			</div>
+
+			<div class="podium">
+				<h3>Podium Open Adultes</h3>
+				<div></div>
+			</div>
+
+			<div class="podium">
+				<h3>Podium Open Junior</h3>
+				<div></div>
+			</div>
+		</div>
+
+		<div class="about">
+			<section class="section-1">
+				<div class="item-1">
+					<img src="assets/img/affiche-1.jpg" alt="">
+				</div>
+
+				<div class="item-2">
+					<h4>Notre Histoire</h3>
+					<p>
+						Elle a été crée dans le but d'organiser des épreuves sportives internationales, nationales, régionales ou départementales de ski et disciplines associés en mer et à la montagne pour les policiers municipaux, gardes champêtres et asvp.
+					</p>
+				</div>
+			</section>
+
+			<section class="section-2">
+				<div class="item-1">
+					<h4>Les Stations</h3>
+					<p>
+						La commune de Superdévoluy accueille, le 21éme championnat de France de Ski des Polices Municipales.
+						Chaque police municipale devra désigner un responsable d’équipe, qui servira d’interlocuteur principal lors de la remise
+						des forfaits dossards et prestations diverses lors du comité de course le vendredi.
+						La commune de Superdévoluy ainsi que le comité d’organisation déclinent toute responsabilité quant aux vols,
+						accidents, incidents pouvant survenir à l’occasion de cette manifestation.
+						Le responsable du stade de slalom, en accord avec la commune et le comité d’organisation, se réserve le droit
+						d’apporter toutes modifications nécessaires au bon fonctionnement de l’épreuve et l’éventueld’horaire ou
+						de site (météo, enneigement, conditions de sécurité).
+					</p>
+				</div>
+
+				<div class="item-2">
+					<img src="assets/img/affiche-2.jpg" alt="">
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer>
+		<div class="infos">
+			<nav>
+				<ul>
+					<li><a href="#">Règles compétitions</a></li>
+					<li><a href="#">Mentions Légales</a></li>
+					<li><a href="#">Partenaires</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="partner">
+			<img src="assets/img/logo-logitud.png" alt="">
+			<img src="assets/img/logo-pm.png" alt="">
+			<img src="assets/img/logo-online.png" alt="">
+		</div>
+
+		<div class="copyright">
+			<span>Copyright - 2020</span>
+		</div>
+	</footer>
 {% endblock %}
